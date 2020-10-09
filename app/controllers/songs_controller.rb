@@ -20,4 +20,10 @@ class SongsController < ApplicationController
   def update
   end
 
+  def destroy
+    Song.find(params[:id]).destroy
+    redirect_to song_url
+
+  end
+
 end

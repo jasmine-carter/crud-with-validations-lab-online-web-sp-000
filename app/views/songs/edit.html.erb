@@ -14,7 +14,7 @@
 <label> Song Artist </label>
 <%=f.text_field :artist_name %>
 
-<%=link_to ("Destroy", song_path(@song), method: :delete) %>
+<%=link_to ("Destroy", song_path, method: :delete) %>
 <label> Edit Song </label>
 <%= f.submit %>
 
